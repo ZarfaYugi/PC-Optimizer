@@ -13,7 +13,7 @@ This is a simple and really really basic one click pc optimizer, made in js with
 Clone the project
 
 ```bash
-  git clone https://link-to-project
+  git clone https://github.com/ZarfaYugi/PC-Optimizer
 ```
 
 Go to the project directory
