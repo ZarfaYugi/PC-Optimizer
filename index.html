@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Click PC Optimizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="custom-title-bar">
+        <span class="title">One Click PC Optimizer</span>
+        <div class="title-buttons">
+            <button span id="minimize-btn">-</button>
+            <button span id="maximize-btn">[ ]</button>
+            <button span id="close-btn">X</button>
+        </div>
+    </div>
+    <div class="container">
+        <h1>One Click PC Optimizer</h1>
+        <button id="optimize-button">Optimize Now!</button>
+        <div id="loading-spinner" class="loading-spinner" style="display: none;"></div> <!-- Loading spinner -->
+        <div id="result-message"></div>
+        <h2>Debug Console</h2>
+        <div id="debug-console">
+            <!-- Debug messages will be displayed here -->
+        </div>
+    </div>
+    <script src="renderer.js"></script>
+</body>
+</html>

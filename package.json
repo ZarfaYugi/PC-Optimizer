@@ -1,0 +1,60 @@
+{
+  "dependencies": {
+    "electron-drag": "^2.0.0",
+    "node": "^23.8.0"
+  },
+ 
+    "name": "one-click-pc-optimizer",
+    "version": "1.0.0",
+    "main": "main.js",
+    "scripts": {
+      "start": "electron .",
+      "build": "electron-builder"
+    },
+    "devDependencies": {
+      "electron": "^latest",
+      "electron-builder": "^latest"
+    },
+    "build": {
+      "appId": "com.yourname.oneclickpcoptimizer",
+      "productName": "One Click PC Optimizer",
+      "files": [
+        "main.js",
+        "index.html",
+        "styles.css",
+        "renderer.js",
+        "package.json"
+      ],
+      "win": {
+        "target": [
+          {
+            "target": "nsis",
+            "arch": [
+              "x64"
+            ]
+          }
+        ]
+      },
+      "mac": {
+        "target": "dmg"
+      },
+      "linux": {
+        "target": "AppImage"
+      }
+    },
+    "nsis": {
+      "oneClick": false, 
+      "perMachine": true, 
+      "allowToChangeInstallationDirectory": true, 
+      "installerIcon": "assets/icon.png", 
+      "uninstallerIcon": "assets/icon.ico", 
+      "installerHeaderIcon": "assets/icon.png", 
+      "createDesktopShortcut": true, 
+      "createStartMenuShortcut": true 
+    },
+
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
